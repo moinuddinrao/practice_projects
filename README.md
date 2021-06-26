@@ -1,1 +1,1 @@
-# Learnorzo
+# Learnorzo is a quiz app
