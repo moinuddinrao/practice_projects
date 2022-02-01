@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.42857143;
+}
+
+div {
+  margin: 0;
+  position: absolute;
+  background-color: #e0ebe8;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 100px;
+  position: relative;
+  left : 10%;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  left : 15%;
+}
+
+.first-container {
+  padding-top: 130px;
+  min-width: 992px;
+}
+
+.landing-image {
+  height: 800px;
+  width: 1000px;
+}
