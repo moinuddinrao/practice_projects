@@ -1,38 +1,35 @@
 body {
   margin: 0;
   height: 2692.95px;
-  width: 100%;
+  text-align: center;
   font-family: 'Merriweather', serif;
 }
 
-.top-container {
-  background-color: #17252A;
-  height: 128px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-
-.top-text {
-  color: #FEFFFF;
-}
-
-.first-container {
-  background-color: #3AAFA9;
-  display: block;
-  padding-top: 130px;
-
-}
-
-.name {
+h1 {
   color: #17252A;
-  display: block;
   font-family: 'Sacramento', cursive;
   font-size: 100px;
   margin: 0;
-  padding-top: 56px;
-  text-align: center;
+  padding-top: 20px;
 }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-container {
+  background-color: #3AAFA9;
+  position: relative;
+  padding-top: 130px;
+}
+
+.middle-container {}
+
+.bottom-container {}
 
 .profession {
   color: #17252A;
@@ -44,9 +41,14 @@ body {
   text-align: center;
 }
 
-.vector {
-  display: block;
+.vector-img {
   margin: 0 auto;
-  padding-top:  25px;
   width: 50%;
 }
+
+.round-img {
+  height: 256px;
+  width: 256px;
+}
+
+.skill-img {}
