@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858190143639",
+    "project_id": "learnorzo",
+    "storage_bucket": "learnorzo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858190143639:android:b1caf8f6aaceead31e09d2",
+        "android_client_info": {
+          "package_name": "com.moin.learnorzo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858190143639-glsi53agaon0da2ndt3i2umr6nbqibcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ql5nIloKlHQly7vKvmzRj22luP7WjKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858190143639-glsi53agaon0da2ndt3i2umr6nbqibcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

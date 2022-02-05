@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "244047917122",
+    "firebase_url": "https://learnorzo-d0446-default-rtdb.firebaseio.com",
+    "project_id": "learnorzo-d0446",
+    "storage_bucket": "learnorzo-d0446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244047917122:android:6037c3fa28e2d7c2d9fddb",
+        "android_client_info": {
+          "package_name": "com.moin.learnorzo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244047917122-7lufvj0dki48u4mpd41ahu3ej8ievdoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuElcOIabb6aTeOQkXKRhU5Z3jqwi5Fx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244047917122-7lufvj0dki48u4mpd41ahu3ej8ievdoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScoreActivity"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/laysScience"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient">
+
+            <TextView
+                android:id="@+id/viewScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/cabinsketchbold"
+                android:text="Score"
+                android:textColor="@color/white"
+                android:textSize="100dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@id/viewScore"
+                android:fontFamily="@font/cabinsketchbold"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="50dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/viewScore"
+                android:fontFamily="@font/cabinsketchbold"
+                android:text=" / 5"
+                android:textColor="@color/white"
+                android:textSize="50dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/cabinsketchbold"
+        android:text="Go to Home"
+        android:textColor="@color/left"
+        android:textSize="50dp"
+        android:background="@color/white"
+
+        >
+
+    </Button>
+
+</LinearLayout>
