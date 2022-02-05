@@ -1,20 +1,17 @@
 body {
   margin: 0;
-  height: 2692.95px;
+  /* height: 2692.95px; */
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 
 h1 {
-  color: #17252A;
   font-family: 'Sacramento', cursive;
-  font-size: 100px;
-  margin: 0;
-  padding-top: 20px;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
+  color: #17252A;
 }
 
 h3 {
@@ -24,21 +21,22 @@ h3 {
 .top-container {
   background-color: #3AAFA9;
   position: relative;
+  margin: 0;
   padding-top: 130px;
 }
 
-.middle-container {}
+/* .middle-container {}
 
-.bottom-container {}
+.bottom-container {} */
 
-.profession {
+.name {
   color: #17252A;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 125%;
-  font-weight: bold;
-  margin: 0;
-  text-align: center;
+  font-size: 6rem;
+  margin: 50px auto 0 auto;
+}
+.profession {
+  font-size: 1.5rem;
+  margin: 0 auto;
 }
 
 .vector-img {
@@ -47,8 +45,6 @@ h3 {
 }
 
 .round-img {
-  height: 256px;
-  width: 256px;
+  height: 16rem;
+  width: 16rem;
 }
-
-.skill-img {}
