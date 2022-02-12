@@ -22,7 +22,10 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-hr {
+.dotted {
+  margin: 0 auto;
+  background-color: inherit;
+  opacity: 1;
   border-style: none;
   border-top: dotted;
   border-color: #B1D0E0;
@@ -44,6 +47,7 @@ p {
   padding-top: 128px;
   text-align: center;
 }
+
 .name {
   display: inline-block;
   width: 50%;
@@ -64,6 +68,7 @@ p {
 
 .middle-container {
   margin: 50px auto;
+  text-align: center;
 }
 
 .bottom-container {
@@ -71,6 +76,7 @@ p {
   position: relative;
   margin: 50px auto 0 auto;
   padding: 40px 0 20px 0;
+  text-align: center;
 }
 
 .profile {
@@ -109,7 +115,7 @@ p {
 }
 
 .btn {
-  background-image: linear-gradient(to bottom right, #2193b0, #6dd5ed );
+  background-image: linear-gradient(to bottom right, #2193b0, #6dd5ed);
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
