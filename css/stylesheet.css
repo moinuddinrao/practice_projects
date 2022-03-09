@@ -1,29 +1,29 @@
-:root {
-    --red: #a80714;
-}
-
-
-
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: antiquewhite;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Verdana", sans-serif;
 }
 
+/* ******************************************* */
+/* header */
+/* ******************************************* */
 .navbar {
   top: 0;
-  height: 6vh;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  height: 10vh;
   background-color: white;
   display: flex;
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
+
 .logo {
   flex: 30%;
   justify-content: center;
@@ -31,52 +31,251 @@ body {
   display: flex;
   margin-left: 10%;
 }
+
 .logo img {
-  margin: 5px 0px;
-  max-width: fit-content;
-  max-height: 6vh;
+  max-height: 7vh;
 }
+
 .menu {
   background-color: white;
   flex: 70%;
   display: flex;
-  margin-left: 10%;
+  margin: 0 10%;
   align-items: center;
 }
-.menu div {
+
+.item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3%;
-  margin: 0;
+  margin-right: 5vh;
+  width: 15vh;
+  height: 7vh;
 }
+
 .menu a {
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Verdana", sans-serif;
-    color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Verdana", sans-serif;
+  color: gray;
 }
+
 .menu a:hover {
   color: darkred;
   cursor: pointer;
 }
 
-#home
-{
-    color: var(--red);
-}
-.item {
-  margin-left: 5%;
+#home {
+  color: darkred;
 }
 
-/* #btnDonate {
+.button {
   background-color: #c6414c;
   border: none;
   color: white;
-  height: 4vh;
-  width: 12vh;
+  height: 7vh;
+  width: 150px;
   border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Verdana", sans-serif;
 }
-#btnDonate:hover {
-  background-color: #a80714;
-} */
+
+.button:hover {
+  background-color: darkred;
+}
+
+/* ******************************************* */
+/* slider */
+/* ******************************************* */
+.slider {
+  width: 100%;
+  height: 786px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 786px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 3s;
+}
+
+.slide img {
+  width: 100%;
+  height: 786px;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-btn:hover {
+  background: darkred;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.navigation-auto div {
+  border: 2px solid darkred;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 3s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: darkred;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: darkred;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: darkred;
+}
+
+/* ******************************************* */
+/* second-container */
+/* ******************************************* */
+.second-container {
+  height: 786px;
+}
+
+.hadith {
+  height: 286px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.hadith h1 {
+  color: #c6414c;
+  font-family: 'Noto Naskh Arabic', serif;
+  margin: 5px 0;
+}
+
+.hadith h3 {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.hadith p {
+  color: #c6414c;
+  margin: 5px 0;
+}
+
+.row-action {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background-color: #c6414c;
+  padding: 50px 0;
+}
+
+.action {
+  float: left;
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  margin: 50px 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.action:hover {
+  margin-top: 40px;
+}
+
+.action-img img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.action-txt {
+  d margin-top: 20px;
+}
+
+.action-txt h2 {
+  margin: 10px 0;
+}
+
+.action-txt p {
+  margin: 10px 0;
+  padding: 10px;
+  color: gray;
+  line-height: 1.5;
+}
+
+.read-more {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Verdana", sans-serif;
+  color: #c6414c;
+}
+
+.read-more:hover {
+  color: darkred;
+}
