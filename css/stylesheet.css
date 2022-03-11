@@ -15,7 +15,7 @@ body {
 .navbar {
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   height: 10vh;
   background-color: white;
@@ -26,7 +26,7 @@ body {
 
 .logo {
   flex: 30%;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   display: flex;
   margin-left: 10%;
@@ -51,6 +51,7 @@ body {
   margin-right: 5vh;
   width: 15vh;
   height: 7vh;
+  transition: all 0.3s ease;
 }
 
 .menu a {
@@ -85,19 +86,83 @@ body {
   background-color: darkred;
 }
 
+.menu-btn i {
+  color: #c6414c;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn i:hover {
+  color: darkred;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .menu-btn i {
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  .menu {
+    position: fixed;
+    top: 10vh;
+    left: -100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ .menu {
+    left: 0;
+    width: 100%;
+    padding: 0 0 10% 0;
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    margin: 5vh 0;
+  }
+
+  .item a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 16px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked ~ .menu .item a {
+    margin-left: 0px;
+  }
+}
+
 /* ******************************************* */
 /* slider */
 /* ******************************************* */
 .slider {
   width: 100%;
-  height: 786px;
+  height: 100%;
   border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 786px;
+  height: 100%;
   display: flex;
 }
 
@@ -140,15 +205,15 @@ body {
   background: darkred;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
@@ -172,23 +237,29 @@ body {
   margin-right: 20px;
 }
 
-#radio1:checked~.navigation-auto .auto-btn1 {
+#radio1:checked ~ .navigation-auto .auto-btn1 {
   background: darkred;
 }
 
-#radio2:checked~.navigation-auto .auto-btn2 {
+#radio2:checked ~ .navigation-auto .auto-btn2 {
   background: darkred;
 }
 
-#radio3:checked~.navigation-auto .auto-btn3 {
+#radio3:checked ~ .navigation-auto .auto-btn3 {
   background: darkred;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    display: none;
+  }
 }
 
 /* ******************************************* */
 /* second-container */
 /* ******************************************* */
 .second-container {
-  height: 786px;
+  margin: 0;
 }
 
 .hadith {
@@ -203,7 +274,7 @@ body {
 
 .hadith h1 {
   color: #c6414c;
-  font-family: 'Noto Naskh Arabic', serif;
+  font-family: "Noto Naskh Arabic", serif;
   margin: 5px 0;
 }
 
@@ -251,20 +322,15 @@ body {
 .action-img img {
   height: 100px;
   width: 100px;
-  margin-bottom: 10px;
 }
 
 .action-txt {
-  d margin-top: 20px;
-}
-
-.action-txt h2 {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .action-txt p {
   margin: 10px 0;
-  padding: 10px;
+  padding: 0 20px;
   color: gray;
   line-height: 1.5;
 }
@@ -278,4 +344,15 @@ body {
 
 .read-more:hover {
   color: darkred;
+}
+
+@media only screen and (max-width: 768px) {
+  .row-action {
+    flex-direction: column;
+    height: 1500px;
+  }
+
+  .action {
+    margin: 50px auto;
+  }
 }
