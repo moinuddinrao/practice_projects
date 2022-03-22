@@ -350,6 +350,9 @@ input[type="checkbox"] {
 
   .row-action {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
 
   .action {
@@ -469,6 +472,8 @@ input[type="checkbox"] {
   .event-content {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-content: center;
     margin: 25px 0;
   }
 
