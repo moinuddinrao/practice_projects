@@ -20,7 +20,7 @@ body {
   height: 10vh;
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -40,8 +40,8 @@ body {
   background-color: white;
   flex: 70%;
   display: flex;
+  justify-content: space-between;
   margin: 0 10%;
-  align-items: center;
 }
 
 .item {
@@ -267,49 +267,41 @@ input[type="checkbox"] {
 }
 
 .hadith {
-  height: 286px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 10% 0;
 }
 
 .hadith h1 {
   color: #c6414c;
   font-family: "Noto Naskh Arabic", serif;
-  margin: 5px 0;
+  margin: 1% 0;
 }
 
 .hadith h3 {
-  margin: 5px 0;
+  margin: 1% 0;
   line-height: 1.5;
 }
 
 .hadith p {
   color: #c6414c;
-  margin: 5px 0;
+  margin: 1% 0;
 }
 
 .row-action {
-  height: 500px;
-  width: 100%;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
+  justify-content: space-between;
   background-color: #c6414c;
-  padding: 50px 0;
+  padding: 10%;
 }
 
 .action {
-  float: left;
   background-color: white;
-  width: 350px;
-  height: 300px;
-  margin: 50px 15px;
+  width: 53vh;
+  height: 45vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -320,7 +312,7 @@ input[type="checkbox"] {
 }
 
 .action:hover {
-  margin-top: 40px;
+  margin-top: -1%;
 }
 
 .action-img img {
@@ -352,45 +344,58 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 768px) {
   .hadith {
-    margin: 0 10px;
+    margin-top: 10vh;
+    padding: 50px;
   }
-  
+
   .row-action {
     flex-direction: column;
-    height: 1500px;
   }
 
   .action {
-    margin: 50px auto;
+    margin: 25px auto;
   }
 }
-
 
 /* ******************************************* */
 /* third-container */
 /* ******************************************* */
 .third-container {
   margin: 0;
+  padding: 10%;
 }
 
-.event-row {
-  height: 500px;
+.event-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 7vh;
+}
+
+.event-content {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+}
+
+.event-column {
+  width: 53vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
+  margin: 50px 0;
   background-color: white;
-  padding: 50px 0;
 }
 
 .event-box {
   float: left;
   background-color: white;
-  width: 350px;
-  height: 300px;
-  margin: 50px 15px;
+  width: 53vh;
+  height: 45vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -400,21 +405,15 @@ input[type="checkbox"] {
   transition: 0.5s;
 }
 
-.event-box:hover {
-  margin-top: 40px;
-}
-
 .event-img img {
-  width: 350px;
-  height: 260px;
+  width: 53vh;
+  height: 45vh;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .event-description {
   height: 40px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .event-date {
@@ -424,9 +423,8 @@ input[type="checkbox"] {
   width: 50%;
   float: left;
   text-align: center;
-  font-size: small;
-  font-family: "Verdana", sans-serif;
   line-height: 40px;
+  border-bottom-left-radius: 5px;
 }
 
 .event-location {
@@ -436,7 +434,49 @@ input[type="checkbox"] {
   width: 50%;
   float: left;
   text-align: center;
-  font-size: small;
-  font-family: "Verdana", sans-serif;
   line-height: 40px;
+  border-bottom-right-radius: 5px;
+}
+
+.event-txt {
+  margin: 50px 0;
+  width: 53vh;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.event-txt p {
+  margin: 10px 0;
+  padding: 0 20px;
+  color: gray;
+  line-height: 1.5;
+}
+
+.read-more {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Verdana", sans-serif;
+  color: #c6414c;
+}
+
+.read-more:hover {
+  color: darkred;
+}
+
+@media only screen and (max-width: 768px) {
+  .event-heading,
+  .event-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .event-heading h1 {
+    margin: 10px auto;
+  }
+
+  .event-column {
+    margin: 25px auto;
+  }
 }
