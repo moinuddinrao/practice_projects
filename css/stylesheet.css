@@ -287,7 +287,7 @@ input[type="checkbox"] {
   line-height: 1.5;
 }
 
-.hadith p {
+.hadith h5 {
   color: #c6414c;
   margin: 1% 0;
 }
@@ -299,7 +299,7 @@ input[type="checkbox"] {
   }
 }
 
-.heading p {
+.heading h5 {
   color: #c6414c;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
@@ -553,7 +553,7 @@ input[type="checkbox"] {
   text-align: center;
   justify-content: center;
   align-content: center;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   background-color: white;
 }
 
@@ -604,7 +604,7 @@ input[type="checkbox"] {
 }
 
 .event-txt {
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -639,6 +639,116 @@ input[type="checkbox"] {
   }
 
   .event-column {
+    width: 100%;
+  }
+}
+
+/* ******************************************* */
+/* fifth-container */
+/* ******************************************* */
+.fifth-container {
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 10%;
+}
+
+.hierarchy-row {
+  display: flex;
+}
+
+.hierarchy-txt{
+  width: 30%;
+}
+
+.hierarchy-txt h5 {
+  color: #c6414c;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.hierarchy-txt div {
+  display: flex;
+  flex-direction: column;
+  line-height: 7vh;
+}
+
+.hierarchy-txt p {
+  margin: 20px 0 20px 0;
+  color: gray;
+  line-height: 1.5;
+}
+
+.hierarchy-boxes {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+#box1, #box2, #box3, #box4 {
+  width: 40%;
+}
+
+.hierarchy-box {
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hierarchy {
+  display: flex;
+  text-align: left;
+} 
+
+.hierarchy p{
+  color: gray;
+  line-height: 1.5;
+}
+
+.hierarchy-details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.hierarchy-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.hierarchy-description {
+  margin: 10px 0 0 0;
+  color: gray;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+  .hierarchy-row {
+    flex-direction: column;
+  }
+
+  .hierarchy-txt {
+    width: 100%;
+  }
+
+  .hierarchy-boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #box1, #box2, #box3, #box4 {
+    width: 100%;
+  }
+  .hierarchy-box {
+    margin: 25px auto;
     width: 100%;
   }
 }
