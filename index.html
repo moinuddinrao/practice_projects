@@ -144,7 +144,7 @@
         <div class="heading">
           <p>Services</p>
           <div>
-            <h1>AUBDS Servies</h1>
+            <h1>AUBDS Services</h1>
             <button class="button">View More</button>
           </div>
         </div>
@@ -158,8 +158,8 @@
           <div class="action-txt">
             <h2>Blood Donation</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Register to be a blood donor for AUBDS by filling the form. Give blood and
+              save lives together. Find out more about blood donation.
             </p>
             <a class="read-more" href="#">Read more</a>
           </div>
@@ -171,8 +171,9 @@
           <div class="action-txt">
             <h2>Request Blood</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Please fill the form to post your blood request. We will inform
+              our donors and will contact you very soon.
+              We hope the needy people recover soon.
             </p>
             <a class="read-more" href="#">Read more</a>
           </div>
@@ -184,8 +185,9 @@
           <div class="action-txt">
             <h2>Donate Money</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              If you are unable to donate blood, 
+              you can still help our cause by donating money.
+              Donated money will be used in our different projects. 
             </p>
             <a class="read-more" href="#">Read more</a>
           </div>
@@ -193,20 +195,59 @@
       </div>
     </div>
 
-    <!-- <div class="third-container">
-      <img src="images/bg.jpg" alt="">
-      
-      <div class="third-txt">
-        <p>We Help People</p>
-        <h1>AUBDS Team</h1>
+    <div class="third-container">
+      <div class="achievements">
+        <h5>We Help People</h5>
+        <h1>Our Achievements</h1>
+        <p>Successful projects: Qalb e Saleem,
+          Project Sayebaan and Project Quat e Akhwat.</p>
       </div>
-      <div class="third-row">
-        <div class="icon">
 
+      <div class="counters">
+        <div>
+          <img class="icon" src="images/counter-icons/experience.png" alt="" />
+          <div class="counter-box">
+            <div class="counter" data-target="10">0</div>
+            <div class="plus">
+              <img src="images/counter-icons/add.png" alt="" />
+            </div>
+          </div>
+          <p>Year Experience</p>
         </div>
 
+        <div>
+          <img class="icon" src="images/counter-icons/team.png" alt="" />
+          <div class="counter-box">
+            <div class="counter" data-target="50">0</div>
+            <div class="plus">
+              <img src="images/counter-icons/add.png" alt="" />
+            </div>
+          </div>
+          <p>Members</p>
+        </div>
+
+        <div>
+          <img class="icon" src="images/counter-icons/blood-bag.png" alt="" />
+          <div class="counter-box">
+            <div class="counter" data-target="1000">0</div>
+            <div class="plus">
+              <img src="images/counter-icons/add.png" alt="" />
+            </div>
+          </div>
+          <p>Blood-bags Collected</p>
+        </div>
+        <div>
+          <img class="icon" src="images/counter-icons/cooperation.png" alt="" />
+          <div class="counter-box">
+            <div class="counter" data-target="7">0</div>
+            <div class="plus">
+              <img src="images/counter-icons/add.png" alt="" />
+            </div>
+          </div>
+          <p>Connections</p>
+        </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="fourth-container">
       <div class="heading">
@@ -292,4 +333,37 @@
       </div>
     </div>
   </body>
+
+  <!--****************** 
+      Counter Animation 
+      ******************-->
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    const speed = 1000; // The lower the slower
+
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        // Lower inc to slow and higher to slow
+        const inc = target / speed;
+
+        // console.log(inc);
+        // console.log(count);
+
+        // Check if target is reached
+        if (count < target) {
+          // Add inc to count and output in counter
+          counter.innerText = Math.ceil(count + inc);
+          // Call function every ms
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  </script>
 </html>
