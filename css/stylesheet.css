@@ -839,6 +839,11 @@ input[type="checkbox"] {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .seventh-container img {
+    width: 100%;
+  }
+}
 /* ******************************************* */
 /* footer*/
 /* ******************************************* */
@@ -868,7 +873,7 @@ input[type="checkbox"] {
 }
 
 .l-footer div img {
-  max-height: 6vh;
+  height: 6vh;
 }
 
 .l-footer p {
@@ -959,6 +964,10 @@ input[type="checkbox"] {
     width: 100%;
     padding-right: 0%;
     margin-bottom: 50px;
+  }
+
+  .l-footer div {
+    width: 100%;
   }
 
   .r-footer {
