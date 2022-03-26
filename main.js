@@ -7,9 +7,8 @@ setInterval(function () {
   }
 }, 4000);
 
-
-// <!--****************** 
-// Counter Animation 
+// <!--******************
+// Counter Animation
 // ******************-->
 const counters = document.querySelectorAll(".counter");
 const speed = 1000; // The lower the slower
@@ -40,4 +39,15 @@ counters.forEach((counter) => {
 });
 //**************************************************
 
-//
+// ***********************
+// Profile slide Animation
+// ***********************
+
+var pcounter = 1;
+setInterval(function () {
+  document.getElementById("pradio" + pcounter).checked = true;
+  pcounter++;
+  if (pcounter > 4) {
+    pcounter = 1;
+  }
+}, 2000);
