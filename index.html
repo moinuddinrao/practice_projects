@@ -38,7 +38,7 @@
     />
 
     <!-- Scripts -->
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,13 +87,13 @@
         <input type="radio" name="radio-btn" id="radio2" />
         <input type="radio" name="radio-btn" id="radio3" />
         <div class="slide first">
-          <img src="images/img1.jpg" alt="" />
+          <img src="images/slider/img1.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="images/img2.jpg" alt="" />
+          <img src="images/slider/img2.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="images/img3.jpg" alt="" />
+          <img src="images/slider/img3.jpg" alt="" />
         </div>
         <div class="navigation-auto">
           <div class="auto-btn1"></div>
@@ -157,7 +157,7 @@
       <div class="row-action">
         <div class="action">
           <div class="action-img">
-            <img src="images/blood-donation.png" alt="" />
+            <img src="images/action/blood-donation.png" alt="" />
           </div>
           <div class="action-txt">
             <h2>Blood Donation</h2>
@@ -170,7 +170,7 @@
         </div>
         <div class="action">
           <div class="action-img">
-            <img src="images/blood-request.png" alt="" />
+            <img src="images/action/blood-request.png" alt="" />
           </div>
           <div class="action-txt">
             <h2>Request Blood</h2>
@@ -184,7 +184,7 @@
         </div>
         <div class="action">
           <div class="action-img">
-            <img src="images/donate-money.png" alt="" />
+            <img src="images/action/donate-money.png" alt="" />
           </div>
           <div class="action-txt">
             <h2>Donate Money</h2>
@@ -268,7 +268,7 @@
         <div class="event-column">
           <div class="event-box">
             <div class="event-img">
-              <img src="images/sammad.jpg" alt="" />
+              <img src="images/event/event1.jpg" alt="" />
             </div>
             <div class="event-description">
               <div class="event-date">
@@ -292,7 +292,7 @@
         <div class="event-column">
           <div class="event-box">
             <div class="event-img">
-              <img src="images/afaq.png" alt="" />
+              <img src="images/event/event2.jpg" alt="" />
             </div>
             <div class="event-description">
               <div class="event-date">
@@ -316,7 +316,7 @@
         <div class="event-column">
           <div class="event-box">
             <div class="event-img">
-              <img src="images/hassan.png" alt="" />
+              <img src="images/event/event3.jpg" alt="" />
             </div>
             <div class="event-description">
               <div class="event-date">
@@ -513,37 +513,4 @@
       </div>
     </footer>
   </body>
-
-  <!--****************** 
-      Counter Animation 
-      ******************-->
-  <script>
-    const counters = document.querySelectorAll(".counter");
-    const speed = 1000; // The lower the slower
-
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-
-        // Lower inc to slow and higher to slow
-        const inc = target / speed;
-
-        // console.log(inc);
-        // console.log(count);
-
-        // Check if target is reached
-        if (count < target) {
-          // Add inc to count and output in counter
-          counter.innerText = Math.ceil(count + inc);
-          // Call function every ms
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
-      };
-
-      updateCount();
-    });
-  </script>
 </html>

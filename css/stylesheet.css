@@ -481,8 +481,8 @@ input[type="checkbox"] {
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  height: 10vh;
+  width: 10vh;
   margin-bottom: 10px;
 }
 
@@ -545,6 +545,7 @@ input[type="checkbox"] {
   justify-content: space-between;
   text-align: center;
   align-content: center;
+  margin-top: 5%;
 }
 
 .event-column {
@@ -554,15 +555,14 @@ input[type="checkbox"] {
   text-align: center;
   justify-content: center;
   align-content: center;
-  margin: 50px 0 0 0;
   background-color: white;
+  overflow: hidden;
 }
 
 .event-box {
   float: left;
   background-color: white;
   width: 100%;
-  height: 300px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -570,50 +570,58 @@ input[type="checkbox"] {
   flex-direction: column;
   border-radius: 5px;
   transition: 0.5s;
+  overflow: hidden;
 }
 
-.event-img img {
+.event-img {
   width: 100%;
-  height: 300px;
+  overflow: hidden;
+}
+.event-img img {
+  max-width: 100%;
+  max-height: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .event-description {
-  height: 40px;
   display: flex;
 }
 
 .event-date {
   color: white;
   background-color: #c6414c;
-  height: 40px;
+  height: 6vh;
+  line-height: 6vh;
   width: 50%;
   text-align: center;
-  line-height: 40px;
   border-bottom-left-radius: 5px;
 }
 
 .event-location {
   color: white;
   background-color: darkred;
-  height: 40px;
+  height: 6vh;
+  line-height: 6vh;
   width: 50%;
   text-align: center;
-  line-height: 40px;
   border-bottom-right-radius: 5px;
 }
 
 .event-txt {
-  margin: 50px 0 0 0;
+  margin: 5% 0 0 0;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-content: center;
 }
 
+.event-txt h2 {
+  margin: 1% 0;
+}
+
 .event-txt p {
-  margin: 10px 0;
+  margin: 1% 0;
   padding: 0 20px;
   color: gray;
   line-height: 1.5;
@@ -633,14 +641,12 @@ input[type="checkbox"] {
 @media only screen and (max-width: 768px) {
   .event-content {
     flex-direction: column;
-  }
-
-  .event-txt {
-    margin: 50px auto;
+    margin-top: 0;
   }
 
   .event-column {
     width: 100%;
+    margin-top: 10%;
   }
 }
 
@@ -674,7 +680,7 @@ input[type="checkbox"] {
 }
 
 .hierarchy-txt p {
-  margin: 20px 0 20px 0;
+  margin: 5% 0;
   color: gray;
   line-height: 1.5;
 }
@@ -690,14 +696,15 @@ input[type="checkbox"] {
 #box3,
 #box4 {
   width: 40%;
+  display: flex;
+  align-items: center;
 }
 
 .hierarchy-box {
   background-color: white;
   width: 100%;
-  height: 300px;
+  padding: 10%;
   display: flex;
-  padding: 25px;
   justify-content: center;
   align-content: center;
   flex-direction: column;
@@ -720,17 +727,18 @@ input[type="checkbox"] {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 .hierarchy-img img {
-  height: 100px;
-  width: 100px;
+  height: 10vh;
+  width: 10vh;
   border-radius: 50%;
 }
 
 .hierarchy-description {
-  margin: 10px 0 0 0;
+  margin: 5% 0 0 0;
   color: gray;
   line-height: 1.5;
 }
@@ -756,7 +764,7 @@ input[type="checkbox"] {
     width: 100%;
   }
   .hierarchy-box {
-    margin: 25px auto;
+    margin-top: 10%;
     width: 100%;
   }
 }
@@ -768,32 +776,35 @@ input[type="checkbox"] {
   margin: 0;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-img {
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .bg-img img {
   width: 100%;
-  height: 75%;
 }
 
 .society {
   color: white;
   position: absolute;
-  top: 50%;
   width: 100%;
   padding: 0 10%;
-  text-align: center;
 }
 
 .society h5 {
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 .society p {
-  margin: 20px auto;
+  margin: 1% auto;
   line-height: 1.5;
   padding: 0 25%;
 }
@@ -816,16 +827,6 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 768px) {
-  .society {
-    top: 25%;
-    width: 100%;
-  }
-
-  .bg-img img {
-    max-width: 100%;
-    height: 75%;
-  }
-
   .society p {
     padding: 0;
   }
@@ -857,6 +858,7 @@ input[type="checkbox"] {
   padding: 10% 10% 10px 10%;
   color: gray;
   background-color: #f5f5f5;
+  /* background-image: url("http://images/footer.jpg"); */
 }
 
 .u-footer {
