@@ -432,7 +432,7 @@ input[type="checkbox"] {
   color: darkred;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 768px) {
   .row-action {
     flex-direction: column;
     text-align: center;
