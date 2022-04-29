@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  color: #808080;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Headings */
+
+.big-headings {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.heading h5 {
+  color: #c6414c;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.heading div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 7vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading div {
+    flex-direction: column;
+  }
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #c6414c;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* ******************************************* */
+/* fixed-navbar*/
+/* ******************************************* */
+.fixed-navbar {
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logo {
+  /* flex: 30%; */
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  max-height: 7vh;
+}
+
+.menu {
+  background-color: white;
+  /* flex: 70%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vh;
+  height: 7vh;
+  transition: all 0.3s ease;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: gray;
+}
+
+.menu a:hover {
+  color: darkred;
+  cursor: pointer;
+}
+
+#home {
+  color: darkred;
+}
+
+.button {
+  background-color: #c6414c;
+  border: none;
+  color: white;
+  height: 7vh;
+  width: 150px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.button:hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+
+.menu-btn i {
+  color: #c6414c;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn i:hover {
+  color: darkred;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .fixed-navbar {
+    padding: 0 10%;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .menu-btn i {
+    display: block;
+  }
+
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+
+  .menu {
+    position: fixed;
+    top: 10vh;
+    left: -100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked~.menu {
+    left: 0;
+    width: 100%;
+    padding: 0 0 10% 0;
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    margin: 5vh 0;
+  }
+
+  .item a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 16px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked~.menu .item a {
+    margin-left: 0px;
+  }
+}
+
+/* ******************************************* */
+/* Title Section */
+/* ******************************************* */
+
+#title {
+  padding: 10%;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-image {
+  width: 100%;
+}
+
+.tick {
+  padding: 0;
+  list-style: none;
+}
+
+.tick li {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.tick i {
+  margin: 0 1rem 1rem 0;
+  color: #c6414c;
+}
+
+@media only screen and (max-width: 768px) {
+  #title {
+    margin-top: 10vh;
+  }
+
+  .landing {
+    padding: 10%;
+  }
+
+  .col-tick {
+    padding: 0;
+  }
+}
+
+/* ******************************************* */
+/* Hadith Section */
+/* ******************************************* */
+
+.hadith {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 5% 0;
+}
+
+.hadith h1 {
+  font-family: 'Noto Naskh Arabic', serif;
+  margin: 1% 0;
+}
+
+.hadith h3 {
+  color: #000;
+  line-height: 1.5;
+}
+
+.hadith h5 {
+  margin: 1% 0;
+}
+
+/* ******************************************* */
+/* About Us Section */
+/* ******************************************* */
+
+#aboutus {
+  padding: 10%;
+}
