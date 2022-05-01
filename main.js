@@ -1,12 +1,3 @@
-var counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 3) {
-    counter = 1;
-  }
-}, 4000);
-
 // <!--******************
 // Counter Animation
 // ******************-->
@@ -37,23 +28,3 @@ counters.forEach((counter) => {
 
   updateCount();
 });
-//**************************************************
-
-// ***********************
-// Profile slide Animation
-// ***********************
-
-var pcounter = 1;
-setInterval(function () {
-  document.getElementById("pradio" + pcounter).checked = true;
-  pcounter++;
-  if (pcounter > 4) {
-    pcounter = 1;
-  }
-}, 2000);
-
-//**************************************************
-
-// ***********************
-// Partners slide Animation
-// ***********************
