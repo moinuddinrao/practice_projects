@@ -1,12 +1,10 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   text-decoration: none;
-  font-size: 16px;
   font-family: "Lato", sans-serif;
 }
 
@@ -24,17 +22,20 @@ p {
 }
 
 .section-heading h5 {
+  margin: 0;
   font-size: 16px;
   color: #c6414c;
 }
 
 .section-heading div {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
 .section-heading h1 {
+  margin: 0;
   line-height: 7vh;
   color: #000;
 }
@@ -151,7 +152,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .fixed-navbar {
     padding: 0 10%;
   }
@@ -225,17 +226,13 @@ input[type="checkbox"] {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   #title {
     margin-top: 10vh;
   }
 
   .landing {
     padding: 10%;
-  }
-
-  .col-tick {
-    padding: 0;
   }
 }
 
@@ -293,7 +290,8 @@ input[type="checkbox"] {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-color: white;
+  background-color: #c6414c;
+  border-radius: 5px;
 }
 
 .hierarchy {
@@ -307,17 +305,24 @@ input[type="checkbox"] {
   flex-direction: column;
   padding-left: 10px;
   width: 100%;
+  color: white;
+}
+
+.hierarchy-details p {
+  color: white;
 }
 
 .hierarchy-img img {
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
+  padding: 0.1rem;
+  background-color: white;
 }
 
-.hierarchy-description {
+.hierarchy-description p {
   margin: 5% 0 0 0;
-  color: gray;
+  color: white;
   line-height: 1.5;
 }
 
@@ -339,7 +344,7 @@ input[type="checkbox"] {
   color: #c6414c;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .tick {
     columns: 1;
     -webkit-columns: 1;
@@ -541,6 +546,7 @@ input[type="checkbox"] {
 #events .card img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 .event-description {
@@ -592,12 +598,207 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   #events .row-container {
     margin-top: 0;
   }
 
   #events .card {
     margin-top: 10%;
+  }
+}
+
+/* ******************************************* */
+/* Join Us Section*/
+/* ******************************************* */
+#joinus {
+  text-align: center;
+  background: url(../images/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.society {
+  color: white;
+  width: 100%;
+  padding: 20% 10%;
+}
+
+.society h5 {
+  margin-bottom: 1%;
+  font-size: 16px;
+}
+
+.society p {
+  margin: 1% auto;
+  line-height: 1.5;
+  padding: 0 25%;
+  color: white;
+}
+
+#joinus button {
+  background-color: white;
+  border: none;
+  color: #c6414c;
+  height: 7vh;
+  width: 150px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+#joinus button:hover {
+  background-color: #c6414c;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .society p {
+    padding: 0;
+    margin: 5% auto;
+  }
+}
+
+/* ******************************************* */
+/* footer*/
+/* ******************************************* */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 10% 10px 10%;
+  color: gray;
+  background-color: #f5f5f5;
+  background: url(../images/footer.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.u-footer {
+  display: flex;
+  width: 100%;
+}
+
+.l-footer {
+  width: 25%;
+  padding-right: 5%;
+}
+
+.l-footer div {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+.l-footer div img {
+  height: 6vh;
+}
+
+.l-footer p {
+  margin: 20px auto;
+  line-height: 1.5;
+}
+
+.social {
+  width: 100%;
+}
+
+.social a {
+  text-decoration: none;
+  background-color: #c6414c;
+  color: white;
+  transition: 0.5s;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.social a:hover {
+  background-color: darkred;
+}
+
+.social a i {
+  font-size: 4vh;
+  color: white;
+}
+
+.r-footer {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.features {
+  width: 30%;
+  margin: 0 5%;
+}
+
+#footer h3 {
+  color: black;
+  border-bottom: 2px solid #c6414c;
+  display: inline-block;
+  height: 6vh;
+}
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.box {
+  margin: 20px auto;
+}
+
+.box li {
+  margin: 20px auto;
+}
+
+.box li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.box a:hover {
+  color: #c6414c;
+}
+
+.b-footer {
+  text-align: center;
+  color: gray;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .u-footer {
+    flex-direction: column;
+  }
+
+  .l-footer {
+    width: 100%;
+    padding-right: 0%;
+    margin-bottom: 50px;
+  }
+
+  .l-footer div {
+    width: 100%;
+  }
+
+  .r-footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .features {
+    width: 100%;
+    margin: 0;
   }
 }
