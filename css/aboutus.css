@@ -16,10 +16,10 @@ p {
 /* Page Title section */
 #page-title {
   margin-top: 10vh;
-  background: url(../images/nav-logo.png);
+  background: url(../images/aboutus.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   display: flex;
 }
 
@@ -143,8 +143,13 @@ ul.tl li .timestamp {
 #team .container {
   margin: 5% 0;
 }
+
+#team .row {
+  justify-content: center;
+}
+
 #team .column {
-  padding: 0 2.5%;
+  padding: 0 1%;
 }
 
 .section-title {
@@ -166,7 +171,6 @@ ul.tl li .timestamp {
   font-weight: bold;
 }
 
-
 /**********************************/
 /********* Team Style **********/
 /**********************************/
@@ -180,7 +184,7 @@ ul.tl li .timestamp {
 }
 
 .team .team-img img {
-  width: 250px;
+  width: 30vh;
   height: auto;
   border-radius: 100%;
   border: 5px solid #c6414c;
