@@ -1,3 +1,3 @@
 # MySite
 CSS - My Site
-Live demo https://moinuddinrao.github.io/CSS-MySite/ 
+Live demo https://moinuddinrao.github.io/Personal-Website/ 
