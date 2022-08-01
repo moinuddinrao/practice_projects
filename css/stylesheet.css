@@ -109,7 +109,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vh;
+  width: 15vh;
   height: 7vh;
   transition: all 0.3s ease;
 }
@@ -135,7 +135,7 @@ p {
   border: none;
   color: white;
   height: 7vh;
-  width: 20vh;
+  width: 15vh;
   border-radius: 3px;
   text-decoration: none;
   font-size: 16px;
@@ -656,7 +656,7 @@ input[type="checkbox"] {
   border: none;
   color: #c6414c;
   height: 7vh;
-  width: 20vh;
+  width: 150px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 16px;
