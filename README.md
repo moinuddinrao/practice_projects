@@ -1,4 +1,4 @@
-# project-foodpanda
+# Food Ordering System
 An online food ordering system
 
 It performs the following functions
