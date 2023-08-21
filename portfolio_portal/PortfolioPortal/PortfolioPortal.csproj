@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C074C6A-6A6C-490E-ACD6-EE23AB5B1B62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PortfolioPortal</RootNamespace>
+    <AssemblyName>PortfolioPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CertificationBLL.cs" />
+    <Compile Include="BLL\EducationBLL.cs" />
+    <Compile Include="BLL\ExperienceBLL.cs" />
+    <Compile Include="BLL\LinkBLL.cs" />
+    <Compile Include="BLL\ProjectBLL.cs" />
+    <Compile Include="BLL\PublicationBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="DAL\CertificationDAL.cs" />
+    <Compile Include="DAL\dbConnection.cs" />
+    <Compile Include="DAL\EducationDAL.cs" />
+    <Compile Include="DAL\ExperienceDAL.cs" />
+    <Compile Include="DAL\LinkDAL.cs" />
+    <Compile Include="DAL\ProjectDAL.cs" />
+    <Compile Include="DAL\PublicationDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="FormEditCertification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCertification.Designer.cs">
+      <DependentUpon>FormEditCertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditEducation.Designer.cs">
+      <DependentUpon>FormEditEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditExperience.Designer.cs">
+      <DependentUpon>FormEditExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditLink.Designer.cs">
+      <DependentUpon>FormEditLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPortfolio.Designer.cs">
+      <DependentUpon>FormEditPortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditProfile.Designer.cs">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditProject.Designer.cs">
+      <DependentUpon>FormEditProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPublication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPublication.Designer.cs">
+      <DependentUpon>FormEditPublication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTemplateCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTemplateCV.Designer.cs">
+      <DependentUpon>FormTemplateCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewCertification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewCertification.Designer.cs">
+      <DependentUpon>FormViewCertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewEducation.Designer.cs">
+      <DependentUpon>FormViewEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewExperience.Designer.cs">
+      <DependentUpon>FormViewExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewProfile.Designer.cs">
+      <DependentUpon>FormViewProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewProjects.Designer.cs">
+      <DependentUpon>FormViewProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewPublications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewPublications.Designer.cs">
+      <DependentUpon>FormViewPublications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VO\CertificationVO.cs" />
+    <Compile Include="VO\EducationVO.cs" />
+    <Compile Include="VO\ExperienceVO.cs" />
+    <Compile Include="VO\LinkVO.cs" />
+    <Compile Include="VO\ProjectVO.cs" />
+    <Compile Include="VO\PublicationVO.cs" />
+    <Compile Include="VO\UserVO.cs" />
+    <EmbeddedResource Include="FormEditCertification.resx">
+      <DependentUpon>FormEditCertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditEducation.resx">
+      <DependentUpon>FormEditEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditExperience.resx">
+      <DependentUpon>FormEditExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditLink.resx">
+      <DependentUpon>FormEditLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPortfolio.resx">
+      <DependentUpon>FormEditPortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProfile.resx">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProject.resx">
+      <DependentUpon>FormEditProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPublication.resx">
+      <DependentUpon>FormEditPublication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTemplateCV.resx">
+      <DependentUpon>FormTemplateCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewCertification.resx">
+      <DependentUpon>FormViewCertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewEducation.resx">
+      <DependentUpon>FormViewEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewExperience.resx">
+      <DependentUpon>FormViewExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewProfile.resx">
+      <DependentUpon>FormViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewProjects.resx">
+      <DependentUpon>FormViewProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewPublications.resx">
+      <DependentUpon>FormViewPublications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Profile-PNG-High-Quality-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profleImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person-Male-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person-Male-Light-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graduate-male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teaching.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linked-In-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Avatar-Transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\researchgate-1324440223558894195_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scholar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graduate-male-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation_hat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
